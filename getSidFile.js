@@ -27,4 +27,6 @@ app.get('/',bp,(req,res,next)=>{
 	getSid(req.query.email,req.query.password,req.query.deviceid).then(sid=>{
 		res.end(sid)
 	})
+
 })
+app.listen(3000,()=>console.log("done"))
